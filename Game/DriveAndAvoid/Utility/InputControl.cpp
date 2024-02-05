@@ -12,7 +12,7 @@ void InputControl::Update()
 {
 	//XInputコントローラーの入力値を取得する
 	XINPUT_STATE input_state = {};
-	GetJoypadInputState(DX_INPUT_PAD1, &input_state);
+	GetJoypadXInputState(DX_INPUT_PAD1, &input_state);
 
 	//ボタン入力値の更新
 	for (int i = 0; i < 16; i++)

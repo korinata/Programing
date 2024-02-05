@@ -86,7 +86,7 @@ void Player::Update()
 void Player::Draw()
 {
 	//プレイヤー画像の描画
-	DrawRotaGraph(location.x, location.y, 1.0, angle, image, TRUE);
+	DrawRotaGraphF(location.x, location.y, 1.0, angle, image, TRUE);
 
 	//バリアが生成されていたら、描画を行う
 	if (barrier != nullptr)
@@ -127,7 +127,7 @@ Vector2D Player::GetLocation() const
 }
 
 //当たり判定の大きさを取得処理
-Vector2D Player::GetLocation() const
+Vector2D Player::GetBoxSize() const
 {
 	return this->box_size;
 }
