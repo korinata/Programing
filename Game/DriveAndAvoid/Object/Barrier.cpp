@@ -1,7 +1,7 @@
 #include "Barrier.h"
 #include "DxLib.h"
 
-Barrier::Barrier() :image(NULL), life_span(1000)
+Barrier::Barrier() : image(NULL), life_span(1000)
 {
 	//‰æ‘œ‚Ì“Ç‚İ
 	image = LoadGraph("Resource/image/barrier.png");
