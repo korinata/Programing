@@ -4,12 +4,12 @@
 Barrier::Barrier() : image(NULL), life_span(1000)
 {
 	//画像の読込み
-	image = LoadGraph("Resource/image/barrier.png");
+	image = LoadGraph("Resource/images/barrier.png");
 
 	//エラーチェック
 	if (image == -1)
 	{
-		throw("Resource/image/barrier.pngがありません\n");
+		throw("Resource/images/barrier.pngがありません\n");
 	}
 }
 
