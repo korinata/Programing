@@ -50,7 +50,7 @@ void Player::Update()
 	}
 
 	//”R—¿‚ÌÁ”ï
-	fuel -= speed*10;
+	fuel -= speed;
 
 	//ˆÚ“®ˆ—
 	Movement();
